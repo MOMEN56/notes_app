@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/widgets/custom_app_bar.dart';
 import 'package:notes_app/widgets/custom_note_item.dart';
+import 'package:notes_app/widgets/notes_list_view.dart';
 
 class NotesBody extends StatelessWidget {
   const NotesBody({super.key});
-
   @override
   Widget build(BuildContext context) {
     return const Padding(
@@ -14,10 +14,10 @@ class NotesBody extends StatelessWidget {
       SizedBox(
       height: 50,  
       ),
-        CustomAppBar(),
-        NoteItem(),
-      ], 
+   CustomAppBar(),
+          Expanded(child: NotesListView()),      ], 
       ),
     );
   }
 }
+
