@@ -9,7 +9,7 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 32, right: 8, left: 8),
+      padding: const EdgeInsets.only( right: 8, left: 8,),
       child: TextField(
         cursorColor: KprimaryColor,
         maxLines: maxLines,
