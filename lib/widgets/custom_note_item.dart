@@ -25,7 +25,7 @@ class NoteItem extends StatelessWidget {
     subtitle: Padding(
       padding:  const EdgeInsets.only(top:16),
       child: Text("Bola",style: TextStyle(color:Colors.black.withOpacity(0.4),
-      fontSize: 20),),
+      fontSize: 18),),
     ),  
     trailing: IconButton(onPressed: (){}, icon: const Icon(Icons.delete),color:Colors.black,iconSize: 32,),
     ), 

@@ -6,8 +6,11 @@ class Homescreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-    body: NotesBody(),  
+    return  Scaffold(
+    floatingActionButton: FloatingActionButton(onPressed: (){},
+    child: const Icon(Icons.add),
+    ),  
+    body: const NotesBody(),  
     );
   }
 }
