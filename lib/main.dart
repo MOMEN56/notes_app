@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notes_app/screens/homescreen.dart';
+import 'package:notes_app/screens/notes_screen.dart';
 
 void main() {
   runApp(const NotesApp());
@@ -11,7 +11,8 @@ class NotesApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      theme: ThemeData(brightness: Brightness.dark),
+      theme: ThemeData(brightness: Brightness.dark,fontFamily: "Poppins"
+      ),
       debugShowCheckedModeBanner: false,  // إيقاف شريط التصحيح
       home: const Homescreen(),
     );
