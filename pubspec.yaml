@@ -39,6 +39,8 @@ dependencies:
   hive_flutter: ^1.1.0
 
 dev_dependencies:
+  hive_generator: ^2.0.1  # استبدل بالإصدار الأخير
+  build_runner: ^2.1.1 
   flutter_test:
     sdk: flutter
 
@@ -47,7 +49,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^4.0.0
+  flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
