@@ -16,7 +16,7 @@ class Homescreen extends StatelessWidget {
               ),
               context: context,
               builder: (context) {
-                return const addNoteBottomSheet();
+                return const AddNoteBottomSheet();
               });
         },
         child: const Icon(Icons.add),
