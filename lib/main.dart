@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:notes_app/screens/edit_note_screeen.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:notes_app/constants.dart';
 import 'package:notes_app/screens/notes_screen.dart';
 
-void main() {
+void main() async {
+  await Hive.initFlutter();
+  await Hive.openBox(kNotesBox);
   runApp(const NotesApp());
 }
 
@@ -11,10 +14,9 @@ class NotesApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      theme: ThemeData(brightness: Brightness.dark,fontFamily: "Poppins"
-      ),
-      debugShowCheckedModeBanner: false,  // إيقاف شريط التصحيح
+    return MaterialApp(
+      theme: ThemeData(brightness: Brightness.dark, fontFamily: "Poppins"),
+      debugShowCheckedModeBanner: false,
       home: const Homescreen(),
     );
   }
