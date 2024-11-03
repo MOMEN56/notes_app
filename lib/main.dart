@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/screens/edit_note_screeen.dart';
 import 'package:notes_app/screens/notes_screen.dart';
 
 void main() {
