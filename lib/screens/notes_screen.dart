@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:notes_app/cubits/notes_cubit/notes_cubit_cubit.dart';
+import 'package:notes_app/cubits/notes_cubit/notes_cubit.dart';
 import 'package:notes_app/widgets/add_note_bottom.dart';
 import 'package:notes_app/widgets/notes_body.dart';
 
@@ -10,7 +10,7 @@ class Homescreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => NotesCubitCubit(),
+      create: (context) => NotesCubit(),
       child: Scaffold(
         floatingActionButton: FloatingActionButton(
           onPressed: () {
